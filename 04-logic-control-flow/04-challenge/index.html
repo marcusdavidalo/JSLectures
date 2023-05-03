@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Else If Nesting</title>
+    <title>Calculator Challenge</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <style>
       body {
         height: 100vh;
@@ -22,10 +26,28 @@
         text-align: center;
         color: white;
       }
+
+      .code {
+        background: linear-gradient(to bottom right, #0f294db0, #010518b0);
+        border-radius: 1rem;
+        padding: 10px;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 500px;
+      }
     </style>
   </head>
   <body>
-    <h1>Else If Nesting</h1>
+    <div class="container">
+      <h1>Calculator Challenge</h1>
+      <div class="d-flex flex-column code fw-bold">
+        <code id="resultadd"></code>
+        <code id="resultsub"></code>
+        <code id="resultmul"></code>
+        <code id="resultdiv"></code>
+        <code id="resulterr"></code>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
