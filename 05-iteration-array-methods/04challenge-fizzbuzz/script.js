@@ -9,7 +9,6 @@ for (let i = 1; i <= 100; i++) {
       // ? console.log("FizzBuzz") // this wont work because the first condition will be true and the code will stop there
       console.log(i);
 }
-
 // the ternary with 3 else if statements looks like this:
 // condition ? expression1 : condition2 ? expression2 : condition3 ? expression3 : expression4;
 
