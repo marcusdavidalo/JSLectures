@@ -8,10 +8,10 @@ const ageElement = document.getElementById('age');
 const imgElement = document.getElementById('img');
 
 // Event Listeners
-genBtn.addEventListener('click', generateName);
+genBtn.addEventListener('click', fetchUser);
 
 // Functions
-function generateName() {
+function fetchUser() {
   fetch('https://randomuser.me/api/')
     .then((response) => response.json())
     // full name
@@ -20,7 +20,7 @@ function generateName() {
       emailElement.textContent = `${data.results[0].email}`;
       phoneElement.textContent = `${data.results[0].phone}`;
       locElement.textContent = `${data.results[0].location.city},  ${data.results[0].location.country}`;
-      ageElement.textContent = `${data.results[0].registered.age}`;
+      ageElement.textContent = `${data.results[0].dom.age}`;
       imgElement.src = `${data.results[0].picture.large}`;
       if (data.results[0].gender === 'male') {
         document.body.style = 'background-color:blue';
@@ -31,4 +31,4 @@ function generateName() {
 }
 
 // Run
-document.addEventListener('DOMContentLoaded', generateName);
+document.addEventListener('DOMContentLoaded', fetchUser);
