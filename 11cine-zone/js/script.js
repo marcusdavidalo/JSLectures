@@ -21,7 +21,6 @@ fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=${API_KEY}`)
       swiperWrapper.appendChild(swiperSlide);
     });
   });
-  console.log('test')
 
 const swiper = new Swiper('.swiper', {
   slidesPerView: 4,
